@@ -46,3 +46,5 @@ for i in range(5):
 print("A soma desses números é:",soma)
 print("A quantidade de impares é:",cont)  
 print(f"A média de impares é:,{soma/cont:.2f}")     
+
+
