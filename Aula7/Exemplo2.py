@@ -30,3 +30,6 @@ print(lista6)
 
 
 
+
+
+

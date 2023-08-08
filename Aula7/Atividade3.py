@@ -69,6 +69,68 @@ lista.append(4)  # Adicionando um novo elemento
 tupla = (1, 2, 3)
 # Não é possível modificar os elementos da tupla diretamente
 
+# Criando um conjunto
+frutas = {"maçã", "banana", "laranja"}
+
+# Adicionando um elemento
+frutas.add("uva")
+
+# Removendo um elemento
+frutas.remove("banana")
+
+# Verificando a existência de um elemento
+if "maçã" in frutas:
+    print("A maçã está na lista de frutas")
 
 
 
+funções = []
+
+for i in range(4):
+    metodos = input(f"Digite o nome do aluno {i+1}: ")
+    funções.append(metodos)
+
+
+meu_dicionario = {"nome": "João", "idade": 25, "cidade": "São Paulo"}
+chaves = meu_dicionario.keys()
+print(chaves)  # Saída: dict_keys(['nome', 'idade', 'cidade'])
+
+
+valores = meu_dicionario.values()
+print(valores)  # Saída: dict_values(['João', 25, 'São Paulo'])
+
+idade = meu_dicionario.get("idade")
+print(idade)  # Saída: 25
+
+profissao = meu_dicionario.get("profissao", "Desconhecida")
+print(profissao)  # Saída: Desconhecida (porque a chave "profissao" não existe)
+
+novos_dados = {"idade": 26, "gênero": "Masculino"}
+meu_dicionario.update(novos_dados)
+print(meu_dicionario)
+# Saída: {'nome': 'João', 'idade': 26, 'cidade': 'São Paulo', 'gênero': 'Masculino'}
+
+# Lista para armazenar os números
+numeros = []
+
+# Loop para ler e armazenar os números
+for i in range(10):
+    numero = float(input(f"Digite o {i+1}º número positivo: "))
+    while numero < 0:
+        print("Número inválido. Digite um número positivo.")
+        numero = float(input(f"Digite o {i+1}º número positivo: "))
+    numeros.append(numero)
+
+# Ordenar a lista em ordem crescente
+numeros.sort()
+
+# Mostrar os números em ordem crescente
+print("Números em ordem crescente:")
+for num in numeros:
+    print(num)
+
+# Mostrar o maior e o menor valor informado
+maior_valor = max(numeros)
+menor_valor = min(numeros)
+print("Maior valor informado:", maior_valor)
+print("Menor valor informado:", menor_valor)
